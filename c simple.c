@@ -7,6 +7,7 @@ Write your code in this editor and press "Run" button to compile and execute it.
 *******************************************************************************/
 
 #include <stdio.h>
+//***********************************Function for finding sum of elements of array**********************************************//
 // int arr[7]={10,20,30,40,50,60,100};
 // int sumarr(int a[],int size){
 //     int sum=0;
@@ -17,13 +18,13 @@ Write your code in this editor and press "Run" button to compile and execute it.
 //     return sum;
 // }
 // int main()
-// {
-    
-    
-   
+// {    
 //     printf("Sum of array is %d",sumarr(arr,7));
 //     return 0;
 //}
+
+//**********************************Example and illustration of Concept of POINTERS********************************************//
+
 // int main(){
 //     int x=30;
 //     float r=128736910.3773478913;
@@ -34,15 +35,18 @@ Write your code in this editor and press "Run" button to compile and execute it.
 //     printf("%x\n",&r);
 //     int *ptr;
 //     ptr = &r;
-//     printf("%d\n",*ptr);
+//     printf("%d\n",*ptr);//prints value stored in the address which is represented by pointer ptr
 //     printf("%x\n",*r);
 //     return 0;
 // }
+
+
+//********************************Creating pointers for arrays******************************************************************//
 // int main(){
-//     int arr[6]={12,443,54,23,14,100};
-//     int *arr_ptr[6];
+//     int arr[6]={12,443,54,23,14,100};//define array
+//     int *arr_ptr[6];//define array pointer along with its size
 //     for (int i=0;i<6;i++){
-//         arr_ptr[i]=&arr[i];
+//         arr_ptr[i]=&arr[i];//each element of pointer array holds address of each element of array arr
 //     }
 //     for (int i=0;i<6;i++){
 //     printf("val of arr_ptr[%d] is %d\n",i,arr_ptr[i]);
@@ -52,6 +56,9 @@ Write your code in this editor and press "Run" button to compile and execute it.
 //     return 0;
 // }
 
+
+
+//***************************using pointers as arguments to a function************************************************************//
 // void getval(int *ptr){
     
 //     *ptr=10000;
@@ -66,7 +73,7 @@ Write your code in this editor and press "Run" button to compile and execute it.
     
 // }
 
-//sum of elements in array using pointers
+//*************sum of elements in array using pointers,creating a function with pointer as argument********************************//
 
 // int sumofarr(int *ptr[], int size){
 //     int sum=0;
@@ -75,8 +82,6 @@ Write your code in this editor and press "Run" button to compile and execute it.
 //     }
 //   return sum;
 // }
-
-
 // int main(){
 //     int arr[6]={12,443,54,23,14,100};
 //     int*ptr_arr_of_arr[6];
@@ -88,6 +93,7 @@ Write your code in this editor and press "Run" button to compile and execute it.
 //     printf("sum of array using pointers as arguments to function is %d", sumofarr(ptr_arr_of_arr,6));
 //     return 0;
 // }
+//*******************************************************************************************************************************//
 
 
 
